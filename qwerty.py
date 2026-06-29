@@ -1,7 +1,6 @@
-from sklearn.datasets import fetch_covtype
+from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
 
-covtype = fetch_covtype()
-X, y = covtype.data, covtype.target
-print(X)
+X, y = load_wine(return_X_y = True)
+print(y)
 
